@@ -1,5 +1,5 @@
 
-Sources = Makefile .gitignore README.md makestuff.mk LICENSE.md
+Sources = Makefile .ignore README.md makestuff.mk LICENSE.md
 -include target.mk
 
 # -include $(ms)/perl.def
