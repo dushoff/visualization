@@ -19,6 +19,7 @@ course:
 include makestuff.mk
 -include $(ms)/git.mk
 -include $(ms)/visual.mk
+-include $(ms)/hybrid.mk
 
 # -include $(ms)/wrapR.mk
 # -include $(ms)/texdeps.mk
