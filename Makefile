@@ -8,6 +8,12 @@ Sources = Makefile .gitignore README.md makestuff.mk LICENSE.md
 
 ## Content
 
+private:
+	git clone https://github.com/bbolker/stat744_private.git $@
+
+course:
+	git clone https://github.com/bbolker/stat744.git $@
+
 ######################################################################
 
 include makestuff.mk
