@@ -8,11 +8,15 @@ Sources = Makefile .ignore README.md makestuff.mk LICENSE.md
 
 ## Content
 
+clonedirs += private
 private:
 	git clone https://github.com/bbolker/stat744_private.git $@
 
+clonedirs += course
 course:
 	git clone https://github.com/bbolker/stat744.git $@
+
+Ignore += $(clonedirs)
 
 ######################################################################
 
