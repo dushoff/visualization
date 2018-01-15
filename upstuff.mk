@@ -11,3 +11,6 @@ Sources += $(ms)
 Makefile: $(ms)
 $(ms): 
 	ls -d ../makestuff && /bin/ln -fs ../makestuff .
+
+Ignore += $(ms)
+

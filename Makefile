@@ -1,6 +1,16 @@
 
-Sources += Makefile .ignore README.md makestuff.mk LICENSE.md
+######################################################################
+
+## Hooks
+
+current: target
+target = Makefile
 -include target.mk
+
+###################################################################
+
+Sources += Makefile .ignore README.md upstuff.mk LICENSE.md
+include upstuff.mk
 
 # -include $(ms)/perl.def
 
@@ -20,7 +30,6 @@ Ignore += $(clonedirs)
 
 ######################################################################
 
-include makestuff.mk
 -include $(ms)/git.mk
 -include $(ms)/visual.mk
 -include $(ms)/hybrid.mk
